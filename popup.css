@@ -1,0 +1,13 @@
+div {
+	background-color: purple;
+	height: 100px;
+	width: 300px;
+	text-align: center;
+	vertical-align: center;
+	line-height: 100px;
+}
+span {
+	display: inline;
+	vertical-align: center;
+}
+
