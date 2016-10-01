@@ -1,3 +1,4 @@
-chrome.browserAction.onClicked.addListener(function(tab){
-	chrome.tabs.create({ url: "http://dankerrigan.me" });
-});
+var timer = window.setInterval( function() {alert("This is an alert")}, 60000);
+clearIntverval(timer);
+
+
