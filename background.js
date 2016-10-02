@@ -1,13 +1,5 @@
 injectCode();
 
-/*chrome.webNavigation.onCompleted.addListener(function() {
-	//alert("PAGE LOADED YAY!!!!!");
-	chrome.tabs.executeScript({
-		code: 'injectCode()'
-	});
-	//injectCode();
-}); */
-
 var cards = [
 			["What... is your name?", "It is Arthur, King of the Britons"],
 			["What... is your quest?", "To seek the Holy Grail."],
@@ -16,7 +8,7 @@ var cards = [
 			["1024 Gigabytes are equal to 1 what?", "Terabyte"],
 			["In 1971, what company invented the floppy disc?", "IBM"],
 			["What is the binary equivalent of  29?", "11101"],
-			["If you wanted to print all of the elements of a binary tree in sorted order, what type of traversal would you use?", "In Order"],
+			["If you wanted to print all of the elements of a binary tree in sorted order, what type of traversal would you use?", "Depth first in order"],
 			["When referring to computer memory, what does RAM stand for?", "Random Access Memory"],
 			["What is the difference between HTTP and HTTPS?", "HTTPS is a secure HTTP"],
 			["What is the Big O time complexity of quicksort?", "O(nlog(n))"],
@@ -26,15 +18,37 @@ var cards = [
 			// ["What is the time derivative of momentum?", "Force"],
 			// ["What is the scientific name for the common potato?", "Solanum Tuberosum L."],
 			// ["What is the chemical symbol for Iron?", "Fe"],
-
 ];
+
+// document.getElementById('file').onchange = function(){
+
+//   var file = this.files[0];
+
+//   var reader = new FileReader();
+//   reader.onload = function(progressEvent){
+//     // Entire file
+//     console.log(this.result);
+
+//     // By lines
+//     var lines = this.result.split('\n');
+//     for(var line = 0; line < lines.length; line++){
+//       console.log(lines[line]);
+//     }
+//   };
+//   reader.readAsText(file);
+// };
+
+// // while (readline(question)) {
+// // 	readline(answer)
+// // 	cards.pushback[question, answer]
+// // }
+
 var side = 0;
 var card = 0;
 var wasFlipped = false;
 
 var timer = window.setInterval(function() {
 	document.getElementById("myModal").style.display = "block";
-	//alert("This is an alert");
 	}, 
 	5000);
 //window.clearInterval(timer);
@@ -111,7 +125,7 @@ function injectCode() {
 	headHtml += ".modal {";
 	headHtml += "display: none; /* Hidden by default */";
 	headHtml += "position: fixed; /* Stay in place */";
-	headHtml += "z-index: 1; /* Sit on top */";
+	headHtml += "z-index: 1000; /* Sit on top */";
 	headHtml += "padding-top: 100px; /* Location of the box */";
 	headHtml += "left: 0;";
 	headHtml += "top: 0;";
@@ -145,6 +159,7 @@ function injectCode() {
 	headHtml += "width: 60px;";
 	//headHtml += "border: 1px solid #111;";
 	headHtml += "background-color: #fff5ee;";
+	headHtml += "text-align: center;";
 	headHtml += "vertical-align: middle;";
 	headHtml += "border-radius: 5px;";
 	//headHtml += "display: block;";
@@ -168,6 +183,7 @@ function injectCode() {
 	headHtml += "width: 60px;";
 	//headHtml += "border: 1px solid #111;";
 	headHtml += "background-color: #fff5ee;";
+	headHtml += "text-align: center;";
 	headHtml += "vertical-align: middle;";
 	headHtml += "border-radius: 5px;";
 	headHtml += "}";
@@ -190,6 +206,7 @@ function injectCode() {
 	headHtml += "width: 60px;";
 	//headHtml += "border: 1px solid #111;";
 	headHtml += "background-color: #fff5ee;";
+	headHtml += "text-align: center;";
 	headHtml += "vertical-align: middle;";
 	headHtml += "border-radius: 5px;";
 	headHtml += "}";
