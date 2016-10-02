@@ -1,13 +1,5 @@
 injectCode();
 
-/*chrome.webNavigation.onCompleted.addListener(function() {
-	//alert("PAGE LOADED YAY!!!!!");
-	chrome.tabs.executeScript({
-		code: 'injectCode()'
-	});
-	//injectCode();
-}); */
-
 var cards = [
 			["What... is your name?", "It is Arthur, King of the Britons"],
 			["What... is your quest?", "To seek the Holy Grail."],
@@ -34,7 +26,6 @@ var wasFlipped = false;
 
 var timer = window.setInterval(function() {
 	document.getElementById("myModal").style.display = "block";
-	//alert("This is an alert");
 	}, 
 	5000);
 //window.clearInterval(timer);
