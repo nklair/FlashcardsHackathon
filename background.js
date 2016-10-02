@@ -93,22 +93,6 @@ close.onclick = function() {
     modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//        modal.style.display = "none";
-//    }
-// }
-
-//document.getElementsByClassName("close")[0].onclick = function() {
-//	console.log("got called");
-//	document.getElementById("myModal").style.display = "none";
-//}
-
-function redColor() {
-	alert("this is working");
-};
-
 function injectCode() {
 
 	var body = document.body;
@@ -234,61 +218,6 @@ function injectCode() {
 	bodyHtml +=	"</div>";
 
 	bodyHtml +=	"</div>";
-
-//	bodyHtml +=	"<script>";
-//	bodyHtml +=	"/* the text to display in the popup */";
-//	bodyHtml +=	"var string = 'This is popup 1';";
-//	bodyHtml +=	"var text = document.getElementsByClassName('text')[0];";
-//	bodyHtml +=	"text.innerHTML = string;";
-
-//	bodyHtml +=	"/* Get the modal */";
-//	bodyHtml +=	"var modal = document.getElementById('myModal');";
-
-//	bodyHtml +=	"/* Get the modal-content */";
-//	bodyHtml +=	"var modalContent = document.getElementsByClassName('modal-content')[0];";
-
-//	bodyHtml +=	"/* Get the button that opens the modal */";
-//	bodyHtml +=	"var btn = document.getElementById('myBtn');";
-
-//	bodyHtml +=	"/* Get the <span> element that closes the modal */";
-//	bodyHtml +=	"var close = document.getElementsByClassName('close')[0];";
-
-//	bodyHtml +=	"/* Get the <span> element that changes the color */";
-//	bodyHtml +=	"var next = document.getElementsByClassName('next')[0];";
-
-//	bodyHtml +=	"/* When the user clicks the button, open the modal";
-//	bodyHtml +=	"btn.onclick = function() {";
-//	bodyHtml +=	"modal.style.display = 'block';";
-//	bodyHtml +=	"}";
-//	bodyHtml += "var timer = window.setInterval(function() {modal.style.display = 'block';}, 5000);";
-//	bodyHtml += "clearIntverval(timer);";
-//	bodyHtml +=	"next.onclick = function() {";
-
-//	bodyHtml +=	"if (string == 'This is popup 1') {";
-//	bodyHtml +=	"string = 'This is popup 2';";
-//	bodyHtml +=	"} else if (string == 'This is popup 2') {";
-//	bodyHtml +=	"string = 'This is popup 3';";
-//	bodyHtml +=	"} else {";
-//	bodyHtml +=	"string = 'This is popup 1';";
-//	bodyHtml +=	"}";
-//	bodyHtml +=	"text.innerHTML = string;";
-//	bodyHtml +=	"}";
-
-
-
-//	bodyHtml +=	"/* When the user clicks on <span> (x), close the modal */";
-//	bodyHtml +=	"close.onclick = function() {";
-//	bodyHtml +=	"console.log('got called');";
-//	bodyHtml +=	"document.getElementById('myModal').style.display = 'none';";
-//	bodyHtml +=	"};";
-
-//	bodyHtml +=	"/* When the user clicks anywhere outside of the modal, close it */";
-//	bodyHtml +=	"window.onclick = function(event) {";
-//	bodyHtml +=	"if (event.target == modal) {";
-//	bodyHtml +=	"modal.style.display = 'none';";
-//	bodyHtml +=	"}";
-//	bodyHtml +=	"};";
-//	bodyHtml +=	"</script>";
 
 	head.innerHTML += headHtml;
 	body.innerHTML += bodyHtml;
