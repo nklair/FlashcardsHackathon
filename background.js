@@ -1,12 +1,13 @@
-var timer = window.setInterval( function() {alert("This is an alert")}, 60000);
+//injectCode();
+var timer = window.setInterval( function() {alert("This is an alert")}, 3000);
 clearIntverval(timer);
-
+/*
 function injectCode() {
 
 	var body = document.body;
 
-	var html = 
-/*	
+	body.appendChild(document)
+	
 	var head = document.head;
 
 	var link = document.createElement(LINK);
@@ -37,9 +38,10 @@ function injectCode() {
 	innerDiv.appendChild(next);
 	innerDiv.appendChild(center);
 	outerDiv.appendChild(innerDiv);
-*/
+	body.appendChild(outerDiv);
+
 
 
 }
 
-
+*/
