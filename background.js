@@ -82,6 +82,7 @@ next.onclick = function() {
 //When the user clicks on <span> (x), close the modal
 close.onclick = function() {
 	if(side || wasFlipped) {
+		wasFlipped = false;
 		side = 0;
 		card++;
 		if (card >= cards.length) {
@@ -223,4 +224,3 @@ function injectCode() {
 	body.innerHTML += bodyHtml;
 }
 
-*/
