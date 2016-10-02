@@ -20,29 +20,6 @@ var cards = [
 			// ["What is the chemical symbol for Iron?", "Fe"],
 ];
 
-// document.getElementById('file').onchange = function(){
-
-//   var file = this.files[0];
-
-//   var reader = new FileReader();
-//   reader.onload = function(progressEvent){
-//     // Entire file
-//     console.log(this.result);
-
-//     // By lines
-//     var lines = this.result.split('\n');
-//     for(var line = 0; line < lines.length; line++){
-//       console.log(lines[line]);
-//     }
-//   };
-//   reader.readAsText(file);
-// };
-
-// // while (readline(question)) {
-// // 	readline(answer)
-// // 	cards.pushback[question, answer]
-// // }
-
 var side = 0;
 var card = 0;
 var wasFlipped = false;
