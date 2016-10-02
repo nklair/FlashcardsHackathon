@@ -19,6 +19,11 @@
     "https://ajax.googleapis.com/",
     "tabs",
     "http://*/*",
-    "https://*/*"
-  ]
+    "https://*/*",
+    "webNavigation"
+  ],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js":["background.js"]
+    }]
 }
